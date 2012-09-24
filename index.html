@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home finances</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="stylesheets/jquery.ui.datepicker.mobile.css" />
+		<link rel="stylesheet" href="stylesheets/finances.css" />
+		<script data-main="javascripts/finances/config/environment" src="javascripts/vendors/require.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" id="new">
+			<div data-role="header">
+				<h1>Home finances</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="button" data-type="date" data-icon="grid" value="23/09/2012" id="date"/>
+<!--						<input type="button" data-icon="arrow-u" value="23/09/2012" />-->
+					</div>
+					<div class="ui-block-b">
+						<select name="category" id="category">
+						   <option value="1">Outcomes category: Food</option>
+						   <option value="2">Outcomes category: Transport</option>
+						   <option value="3">Outcomes category: Sport</option>
+						   <option value="4">Outcomes category: Clothers</option>
+						</select>
+					</div>
+				</div><!-- /grid-a -->
+				<textarea name="description" id="description" placeholder="Description"></textarea>
+				<input type="text" name="amount" id="amount" value="" placeholder="Amount" />
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="reset" data-icon="delete" value="Cancel" />
+					</div>
+					<div class="ui-block-b">
+						<input type="submit" data-icon="check" data-theme="b" value="OK" />
+					</div>
+				</div><!-- /grid-a -->
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+		<div data-role="page" id="calendar">
+			<div data-role="header">
+				<h1>Home finances</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<h2>Hello from Calendar!</h2>
+				<div id="test-calendar"></div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+	</body>
+</html>
